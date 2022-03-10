@@ -1,47 +1,47 @@
 .footer {
-    background-image: url(/images/footer-bg.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: $darkBlue;
+  background-image: url("../images/footer-bg.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $darkBlue;
+  a {
+    text-decoration: none;
+  }
+  .footer-content {
+    flex-direction: column;
+    margin: 0 2rem;
+    text-align: center;
+    gap: 20px;
+    .full-icon {
+      img {
+        height: 200px;
+        width: 300px;
+        margin-top: 2rem;
+      }
+      align-self: center;
+    }
+    .location {
+      .map {
+        height: 200px;
+        min-width: 300px;
+      }
+    }
+    @include breakpoint-up(large) {
+      text-align: left;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+  .quick-links {
     a {
-        text-decoration: none;
+      color: $darkBlue;
+      &:hover {
+        color: $secondaryColor;
+        font-size: scale(1.1);
+      }
     }
-    .footer-content {
-        flex-direction: column;
-        margin: 0 2rem;
-        text-align: center;
-        gap: 20px;
-        .full-icon {
-            img {
-                height: 200px;
-                width: 300px;
-                margin-top: 2rem;
-            }
-            align-self: center;
-        }
-        .location {
-            .map {
-                height: 200px;
-                min-width: 300px;
-            }
-        }
-        @include breakpoint-up(large) {
-            text-align: left;
-            flex-direction: row;
-            align-items: flex-start;
-        }
-    }
-    .quick-links {
-        a {
-            color: $darkBlue;
-            &:hover {
-                color: $secondaryColor;
-                font-size: scale(1.1);
-            }
-        }
-    }
-    .final {
-        font-size: .8rem;
-    }
+  }
+  .final {
+    font-size: 0.8rem;
+  }
 }

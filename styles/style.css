@@ -743,7 +743,7 @@ body.noscroll {
 }
 
 .footer {
-  background-image: url(/images/footer-bg.svg);
+  background-image: url("../images/footer-bg.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -804,6 +804,6 @@ body.noscroll {
 }
 
 .footer .final {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 /*# sourceMappingURL=style.css.map */
