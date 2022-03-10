@@ -1,0 +1,25 @@
+.alert {
+  background-color: $primaryColor;
+  font-size: 1.2rem;
+  .flex {
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+  }
+  i {
+    padding-right: 1rem;
+  }
+  a {
+    text-decoration: none;
+    color: $darkBlue;
+  }
+  .office-hours p {
+    display: inline;
+  }
+  .phone-number {
+    @include breakpoint-down(small) {
+      // text-align: center;
+      // align-self: center;
+    }
+  }
+}

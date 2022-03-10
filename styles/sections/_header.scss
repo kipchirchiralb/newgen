@@ -1,0 +1,113 @@
+.header {
+  background-color: white;
+  color: $secondaryColor;
+  padding: 0;
+  align-items: center;
+  .container {
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    font-size: 1.15rem;
+    transition: color 200ms ease-in-out;
+
+    font-weight: bold;
+    &:hover {
+      color: $primaryColor;
+    }
+    &:active {
+      color: $primaryColor;
+      font-weight: bold;
+    }
+  }
+  .dropdown {
+    position: relative;
+    top: 10px;
+    .dropdown-content {
+      position: relative;
+      top: -39px;
+      left: 0;
+      z-index: -30;
+      visibility: hidden;
+      li {
+        position: absolute;
+        list-style: none;
+        visibility: hidden;
+        z-index: -30;
+        left: 0px;
+        top: 0px;
+        transition: top 600ms ease-in-out;
+      }
+    }
+    &:hover {
+      .dropdown-content {
+        z-index: 30;
+        visibility: visible;
+        background-color: $lightGrayishBlue;
+        li {
+          z-index: 30;
+          visibility: visible;
+          width: 160%;
+          padding-bottom: 1rem;
+          background-color: $white;
+          border-radius: 4px;
+          line-height: 1.2;
+          &:nth-child(1) {
+            left: 0px;
+            top: 39px;
+          }
+          &:nth-child(2) {
+            left: 0px;
+            top: 74px;
+          }
+          &:nth-child(3) {
+            left: 0px;
+            top: 110px;
+          }
+          &:nth-child(4) {
+            left: 0px;
+            top: 152px;
+          }
+        }
+      }
+    }
+  }
+  &__icon {
+    height: 3rem;
+    // margin-right: 2.3rem;
+  }
+  &__menu {
+    align-items: center;
+    div:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+  &__humburger {
+    //Mobile-Menu toggle
+    > span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: $secondaryColor;
+      transition: all 300ms ease-in-out;
+      transform-origin: 3px 1px;
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  //Humburger open styles
+  &.open {
+    .header__humburger {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

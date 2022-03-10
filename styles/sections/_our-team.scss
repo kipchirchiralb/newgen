@@ -1,0 +1,53 @@
+.our-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .our-team-content {
+    // margin: 0 20px;
+  }
+  .team-members {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    .team-card {
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      font-size: 0.7rem;
+      padding: 0 1rem;
+      background-color: $veryLightGray;
+      height: 200px;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: inset 20px 20px 60px $primaryColor;
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .card-header-img {
+          width: 30%;
+          border-radius: 50%;
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+        }
+        .card-header-text {
+          width: 60%;
+          .member-title {
+            color: $primaryColor;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/images/newgenicontitle.png" type="image/icon type">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Oxygen:wght@300;400;700&family=Public+Sans:wght@300;400&family=Roboto:wght@300;400;500&family=Ubuntu:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer>
+    </script>
+    <script src="scripts/mattboldt-typed.js/lib/typed.min.js" defer></script>
+
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/stats-counter.js" defer></script>
+    <script src="scripts/mapbox.js" defer></script>
+    <script src="https://use.fontawesome.com/aefd8bf22b.js" defer></script>
+    <title>NewGen Survyors</title>
+</head>
+
+<body onload="load()">
+    <!-- background image -->
+
+    <!-- alert -->
+    <div class="fixed-top">
+        <section class=" alert">
+            <div class="container container--px flex">
+
+                <div class="phone-number">
+                    <a href="tel:+254726996133">
+                        <i class="fa fa-phone fa-1x hide-for-mobile"></i> +254726996133
+                    </a>
+
+                    <a href="tel:+254726996133">
+                        <i class="fa fa-phone fa-1x hide-for-mobile"></i> +254 724897455
+                    </a>
+                </div>
+
+                <div class="email hide-for-mobile">
+                    <a href="mailto: info@newgensurveyors.co.ke">
+                        <i fa class="fa fa-envelope fa-1x"></i> info@newgensurveys.co.ke
+                    </a>
+                </div>
+
+                <div class="office-hours hide-for-mobile">
+                    <i class="fa fa-clock-o fa-1x"></i>
+                    <p href="#">Monday - Friday: 8AM -5PM</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- navbar -->
+        <header class="header">
+            <div class="container container--px flex flex--sb">
+
+                <div class="header__icon">
+                    <a href="#"><img class="header__icon" src="images/newgenicontop.png" alt="new gen icon 2"></a>
+                </div>
+
+                <nav class="header__menu flex flex--se hide-for-tablet">
+
+                    <div>
+                        <a href="#">HOME</a>
+                    </div>
+                    <div>
+                        <a href="#">GALLERY</a>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-btn">SERVICES
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">GIS and Mapping</a></li>
+                            <li><a href="#">Physical planning</a></li>
+                            <li><a href="#">Positioning</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-btn">COMPANY
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Mision and Vision</a></li>
+                            <li><a href="#">Our team</a></li>
+                            <li><a href="#">Location</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="home">
+                        <a href="#">CONTACT US</a>
+                    </div>
+                </nav>
+
+                <div class="header__humburger hide-for-desktop">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- show case -->
+
+    <section class="showcase">
+        <div class="container">
+            <h1>Bring us all your survey worries</h1>
+
+            <div class="intro flex flex--sa">
+                <div class="showcase-one">
+                    <p> <span>NewGen Surveys Limited</span> is a private survey consultancy firm, registered in
+                        Kenya in 2018 as a business name, and incorporated as a Limited Liability company in the
+                        year 2020.</p>
+                </div>
+                <div class="showcase-two">
+                    <div class="stats">
+                        <p><span id="01"></span>+&emsp; Years of experience</p>
+                        <p><span id="02"></span>&emsp; Experienced Experts</p>
+                        <p><span id="03"></span>+&emsp; Happy Clients</p>
+                        <p><span id="04"></span>%&emsp; Modern Techniques</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- other  sections -->
+    <section class="main">
+        <div class="container container--pall ">
+            <div class="main-content flex">
+                <div class="about-us flex-item">
+                    <h2>SURVEYING | MAPPING | POSITIONING </h2>
+                    <p>
+                        NewGen is an innovative and quality driven company that has been in existence for over fourteen
+                        years. We are experienced in the provisioning of land surveying and mapping solutions to both
+                        private sector and public agency clients. We offer a wide range of surveying services covering
+                        Engineering, Topographical, Cadastral, and Sectional Property surveys, GIS and digital mapping
+                        services.
+                        Our surveying teams and management offer a range of expertise and commitment to delivery that is
+                        the cornerstone of the services that we offer our clients.
+                        The firm employs the latest methods, technology and software to generate survey data,
+                        information, drawings and plans that meet varying requirements and specifications.
+                    </p>
+                    <a class="btn btn-primary" href="about-us.html"></a>
+                </div>
+
+                <div class="flex-item green-card">
+                    <h2>OUR SERVICES</h2>
+                    <ul class="services-list">
+                        <li>Engineering survey</li>
+                        <li>Topographical survey</li>
+                        <li>Sectional Property Survey</li>
+                        <li>Geospatial Information Sytems</li>
+                        <li>Digital mapping Services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <a href="./gallery.html">
+        <section class="gallery">
+            <img src="images/newgen1.png" alt="">
+            <img src="images/newgen2.png" alt="">
+            <img src="images/newgen3.png" alt="">
+            <img src="images/newgen4.png" alt="">
+            <img src="images/newgen2.png" alt="">
+            <img src="images/newgen3.png" alt="">
+            <img src="images/newgen4.png" alt="">
+            <img src="images/gnss-reciever.png" alt="">
+            <img src="images/newgen1.png" alt="">
+
+            <!-- <p class="gallery-text">
+                Visit&nbsp;our&nbsp;Gallery
+            </p> -->
+            <div class="gallery-badge">
+                <p>Surveyors <br> at work</p>
+
+            </div>
+        </section>
+    </a>
+
+    <section class="tech-tools">
+        <div class="section-title-div">
+            <h1 class="section-title">Technologies and Equipments</h1>
+        </div>
+        <div class="container container--pall">
+
+            <div class="tech-tools-intro">
+                <img class="tech-img" src="./images/drone-at-work.jpg" alt="">
+                <p>The main surveying technologies and equipments employed by NewGen in carrying out survey services
+                    include Global
+                    Navigation Satellite System (GNSS), Drone surveys, Total Station observations as well as
+                    conventional methods like
+                    theodolites, tapes, levels and leveling staves. All our surveys are currently produced in
+                    different versions of AutoCAD
+                    and ARC GIS to a very high standard.
+                </p>
+                <img class="tech-img hide-for-tablet" src="./images/gnss-reciever.png" alt="">
+
+            </div>
+            <div class="tech-tools-grid">
+                <div class="tools-grid-item tools-grid-title">
+                    Equipments
+                </div>
+                <div class="tools-grid-item tools-grid-title">
+                    Desciption & usage
+                </div>
+                <div class="tools-grid-item tools-grid-title hide-for-mobile">
+                    Condition
+                </div>
+                <div class="tools-grid-item tools-grid-title hide-for-mobile">
+                    Owned / Leased
+                </div>
+                <!-- item 1 -->
+                <div class="tools-grid-item ">
+                    FOUR(4) GNSS DUAL FREQUENCY RECEIVERS WITH EXTERNAL RADIO
+
+                </div>
+                <div class="tools-grid-item ">
+                    MAKE: ComNav <br>MODEL: T300Plus <br>For Survey Work-data capture
+                </div>
+                <div class="tools-grid-item hide-for-mobile">
+                    ALL NEW
+                </div>
+                <div class="tools-grid-item hide-for-mobile">
+                    OWNED
+                </div>
+                <!-- item 2 -->
+                <div class="tools-grid-item">
+                    HAND HELD/MOBILE GPS RECIEVER
+                </div>
+                <div class="tools-grid-item">
+                    MAKE: Magellan <br>MODEL: G6 <br>For Survey Work-data capture
+                </div>
+                <div class="tools-grid-item hide-for-mobile">
+                    GOOD
+                </div>
+                <div class="tools-grid-item hide-for-mobile">
+                    OWNED
+                </div>
+                <!-- item 3 -->
+                <div class="tools-grid-item">
+                    TWO(2) TOTAL STATIONS
+
+                </div>
+                <div class="tools-grid-item">
+                    MAKE: South <br>For Survey Work-data capture
+                </div>
+                <div class="tools-grid-item hide-for-mobile">
+                    GOOD
+                </div>
+                <div class="tools-grid-item hide-for-mobile">
+                    OWNED
+                </div>
+
+
+                <!-- item 4 -->
+                <div class="tools-grid-item">
+                    ONE(1) THEODOLITE
+
+                </div>
+                <div class="tools-grid-item">
+                    MAKE: Wild T2 <br>For Survey Work-data capture
+                </div>
+                <div class="tools-grid-item hide-for-mobile">
+                    GOOD
+                </div>
+                <div class="tools-grid-item hide-for-mobile">
+                    OWNED
+                </div>
+                <!-- item 5 -->
+                <div class="tools-grid-item">
+                    THREE(3) HP LAPTOPS With necessary Survey Sofwtware (AutoCad & ARCGIS 10.4)
+
+                </div>
+                <div class="tools-grid-item">
+                    3CF0219LQ3,
+                    5CH137024R &
+                    CND80655QT
+                    <br>For processing & storing
+                    Survey
+                    Work and Mapping.
+
+                </div>
+                <div class="tools-grid-item hide-for-mobile">
+                    GOOD
+                </div>
+                <div class="tools-grid-item hide-for-mobile">
+                    OWNED
+                </div>
+                <!-- item 5 -->
+                <div class="tools-grid-item ">
+                    3 HP DESKTOP COMPUTERS
+                    With necessary
+                    Survey Software
+                    (AutoCAD &
+                    ARCGIS 10.4)
+
+
+                </div>
+                <div class="tools-grid-item">
+                    CNC232RJ5C,
+                    CZC0273VQ5 &
+                    CZC226B462
+                    <br>For processing & storing
+                    Survey
+                    Work, Mapping & non technical
+                    office records.
+
+                </div>
+                <div class="tools-grid-item hide-for-mobile">
+                    GOOD
+                </div>
+                <div class="tools-grid-item hide-for-mobile">
+                    OWNED
+                </div>
+            </div>
+    </section>
+
+    <section class="services">
+        <div class="section-title-div">
+            <h1 class="section-title">Our Services</h1>
+        </div>
+        <div class="container container--px">
+
+            <div class="flex card">
+                <div>
+                    <h2>GNSS Surveying & Controls.</h2>
+                    <p>GPS control networks, both horizontal and vertical, tied to the Kenyan geodetic reference system
+                        through static GNSS
+                        surveying.</p>
+                </div>
+                <img class="hide-for-mobile" src="images/kigen-newgen.png" alt="">
+            </div>
+            <div class="flex card">
+                <img class="hide-for-mobile" src="images/cadastral.png" alt="">
+                <div>
+                    <h2> Cadastral Surveys.</h2>
+                    <p>New grant Surveys, Subdivision surveys (both urban and rural), beacon and boundary
+                        re-establishment surveys. These types
+                        of surveys are done to support title (ownership) registration for property or property boundary
+                        re-establishment in
+                        accordance with the Survey Act (Cap 299, Laws of Kenya).</p>
+                </div>
+            </div>
+            <div class="flex card">
+
+                <div>
+                    <h2> Topographical Survey.</h2>
+                    <p>Survey of natural and man-made features in any given area with height & coordinate information
+                        tied to Survey of Kenya
+                        datum through GNSS (Static & RTK) and Drone survey methods.
+
+                        The end product is usually a plan showing all significant features including elevations in the
+                        form of spot heights or
+                        contours and any other spatial data requested.
+
+                        The data is then delivered as hard copy (paper or film) and soft copies in shape files, PDF,
+                        DWG, DXF, GPX and KML
+                        formats, and all work is archived for future reference.
+                    </p>
+                </div>
+                <img class="hide-for-mobile" src="images/topographical-survey.jpg" alt="">
+            </div>
+            <div class="flex card">
+                <img class="hide-for-mobile" src="images/eng-construction.png" alt="">
+                <div>
+                    <h2> Engineering, Construction Support Surveys</h2>
+                    <p>Site surveying for design work, setting out and carrying out as built surveys. A site survey is
+                        used to collect data
+                        about the topography of a site and is presented as a plan or drawing.
+
+                        The purpose of such surveys is for conducting setting out works. Setting out involves extraction
+                        of data from a drawing
+                        and accurately marking out the drawing features on the ground. This can be electricity power
+                        supply lines, earth works,
+                        sewers, road works, bridges, buildings or housing development.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="our-team">
+        <div class="section-title-div">
+            <h1 class="section-title">Our Team</h1>
+        </div>
+        <div class="container our-team-content">
+            <div class="our-team-intro">
+                Our firm is headed by a Licensed Land Surveyor and has several surveying and geoinformation experts with
+                many years of
+                experience.
+
+            </div>
+            <div class="team-members">
+                <div class="team-card">
+                    <div class="card-header">
+                        <div class="card-header-img">
+                            <img src="./images/smallearth.jpg" alt="kigen">
+                        </div>
+                        <div class="card-header-text">
+                            <h3 class="member-name">Brian Kigen</h3>
+                            <p>BSc Geoinfomatics - TUK</p>
+                            <h4 class="member-title">Managing Director - Licensed Drone Pilot</h4>
+                        </div>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nemo explicabo, ipsam itaque
+                        ducimus qui.</p>
+                    <div class="member-links">
+                        <a href="tel:+254726996133"><button>
+                                <i class="fa fa-phone fa-1x"></i>
+                            </button>
+                        </a>
+                        <a href="mailto:kbryo94@gmail.com"><button>
+                                <i class="fa fa-envelope fa-1x"></i>
+                            </button>
+                        </a>
+                        <a href="linkein.com"><button>
+                                <i class="fa fa-linkedin fa-1x"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="card-header">
+                        <div class="card-header-img">
+                            <img src="./images/smallearth.jpg" alt="kigen">
+                        </div>
+                        <div class="card-header-text">
+                            <h3 class="member-name">Zachariah K Maiyo </h3>
+                            <p>B.Sc Geomatics Engineering and Geospatial Information Systems - JKUAT</p>
+                            <h4 class="member-title">Approved Assisant Surveyor</h4>
+                        </div>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nemo explicabo, ipsam itaque
+                        ducimus qui.</p>
+                    <div class="member-links">
+                        <a href="tel:+254726996133"><button>
+                                <i class="fa fa-phone fa-1x"></i>
+                            </button>
+                        </a>
+                        <a href="mailto:kbryo94@gmail.com"><button>
+                                <i class="fa fa-envelope fa-1x"></i>
+                            </button>
+                        </a>
+                        <a href="linkein.com"><button>
+                                <i class="fa fa-linkedin fa-1x"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="card-header">
+                        <div class="card-header-img">
+                            <img src="./images/smallearth.jpg" alt="kigen">
+                        </div>
+                        <div class="card-header-text">
+                            <h3 class="member-name">Musungu M Daniel </h3>
+                            <p>B.Sc Geomatics Engineering and Geospatial Information Systems - JKUAT</p>
+                            <h4 class="member-title">Approved Assisant Surveyor</h4>
+                        </div>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nemo explicabo, ipsam itaque
+                        ducimus qui.</p>
+                    <div class="member-links">
+                        <a href="tel:+254726996133"><button>
+                                <i class="fa fa-phone fa-1x"></i>
+                            </button>
+                        </a>
+                        <a href="mailto:kbryo94@gmail.com"><button>
+                                <i class="fa fa-envelope fa-1x"></i>
+                            </button>
+                        </a>
+                        <a href="linkein.com"><button>
+                                <i class="fa fa-linkedin fa-1x"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="card-header">
+                        <div class="card-header-img">
+                            <img src="./images/smallearth.jpg" alt="kigen">
+                        </div>
+                        <div class="card-header-text">
+                            <h3 class="member-name">Edwin Kiprono </h3>
+                            <p>BSc Geospatial Information Science and Remote Sensing - DKUT</p>
+                            <h4 class="member-title">GIS Expert</h4>
+                        </div>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nemo explicabo, ipsam itaque
+                        ducimus qui.</p>
+
+                    <div class="member-links">
+                        <a href="tel:+254726996133"><button>
+                                <i class="fa fa-phone fa-1x"></i>
+                            </button>
+                        </a>
+                        <a href="mailto:kbryo94@gmail.com"><button>
+                                <i class="fa fa-envelope fa-1x"></i>
+                            </button>
+                        </a>
+                        <a href="linkein.com"><button>
+                                <i class="fa fa-linkedin fa-1x"></i>
+                            </button>
+                        </a>
+                    </div>
+
+
+
+
+                </div>
+                <div class="team-card">
+                    <div class="card-header">
+                        <div class="card-header-img">
+                            <img src="./images/smallearth.jpg" alt="kigen">
+                        </div>
+                        <div class="card-header-text">
+                            <h3 class="member-name"> Leonard Wandera </h3>
+                            <p>Diploma in Land Survey - Sigalagala Polytechnic</p>
+                            <h4 class="member-title">Survey Assistant</h4>
+                        </div>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nemo explicabo, ipsam itaque
+                        ducimus qui.</p>
+
+                    <div class="member-links">
+                        <a href="tel:+254726996133"><button>
+                                <i class="fa fa-phone fa-1x"></i>
+                            </button>
+                        </a>
+                        <a href="mailto:kbryo94@gmail.com"><button>
+                                <i class="fa fa-envelope fa-1x"></i>
+                            </button>
+                        </a>
+                        <a href="linkein.com"><button>
+                                <i class="fa fa-linkedin fa-1x"></i>
+                            </button>
+                        </a>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="projects">
+        <div class="section-title-div">
+            <h1 class="section-title">Previous Projects</h1>
+        </div>
+        <div class="projects-flex container">
+            <div class="project-category">
+                <h4>Topographical Survey</h4>
+            </div>
+            <div class="projects-grid">
+                <div class="projects-grid-item projects-grid-title">Project</div>
+                <div class="projects-grid-item projects-grid-title">Client</div>
+                <!-- item 1 -->
+                <div class="projects-grid-item">Compilation, Processing and Procuring Certificate
+                    of Lease Over Land Administered by the County
+                    Government of Uasin Gishu for Rock, Naiberi and
+                    Simat Trading Centres.
+                </div>
+                <div class="projects-grid-item"><span>County Government of Uasin
+                        Gishu
+                    </span></div>
+                <!-- item 2 -->
+                <div class="projects-grid-item">Facilitation of Titling of National Housing
+                    Properties in Eldoret Municipality & Isiolo Town
+                </div>
+                <div class="projects-grid-item"><span>National Housing
+                        Co-oporation
+                    </span>
+                </div>
+                <!-- item 3 -->
+                <div class="projects-grid-item">Provision of Conveyancing Services on a 10 Acre
+                    Parcel of Land in Eldoret in aid registration and
+                    title deed production.
+                </div>
+                <div class="projects-grid-item"><span>Maseno University
+                        Retirement Benefits Scheme
+                    </span></div>
+            </div>
+            <div class="link-to-projects">
+                <a href="#">View All Projects</a>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content flex flex--sb">
+
+                <div class="full-icon flex-item">
+                    <img src="images/newgeniconfull.png" alt="">
+                </div>
+
+                <div class="quick-links flex-item">
+                    <h3>QUICK LINKS</h3>
+                    <p><a href="#">Home</a></p>
+                    <p><a href="#">Services</a></p>
+                    <p><a href="#">About us</a></p>
+                    <p><a href="#">Blog</a></p>
+                    <p><a href="#">FAQ</a></p>
+
+                </div>
+
+                <div class="reach-us flex-item">
+                    <h3>CONTACT US</h3>
+                    <p>For all requests and inquiries</p>
+                    <p><span>Cell:&ensp;</span><a href="">+254777272727</a></p>
+                    <p><span>Email:&ensp;</span><a href="mailto:">info@newgensurveyors.co.ke</a></p>
+                    <p>P.O Box 1234-00001, Eldoret</p>
+                    <p><span>Office : </span>K.V.D.A Plaza, 8th Floor </p>
+                </div>
+
+                <div class="location flex-item">
+                    <h3>VISIT US</h3>
+                    <div class="map" id="map"></div>
+
+                </div>
+
+            </div>
+
+            <div class="final flex flex--sb">
+                <div class="copyright flex-item">
+                    <p>&copy;NewGen Surveys Ltd. All Rights Reserved </p>
+                </div>
+
+                <div class="attribute flex-item">
+                    <p> Designed by &Tab; <a href="kipchirchiralb.com">Kipchirchir Albert</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

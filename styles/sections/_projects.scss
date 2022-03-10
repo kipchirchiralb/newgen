@@ -1,0 +1,45 @@
+.projects {
+  .projects-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    .projects-category {
+      font-size: 0.8rem;
+    }
+    .projects-grid {
+      // font-size: 0.8rem;
+      width: 80%;
+      margin: 10px auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      row-gap: 5px;
+      .projects-grid-title {
+        font-weight: bold;
+      }
+      .projects-grid-item {
+        background-color: $lightGrayishBlue;
+        padding-left: 5px;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+    .link-to-projects {
+      a {
+        text-decoration: none;
+        font-size: 1rem;
+        // border: 1px solid $lightGrayishBlue;
+        border-radius: 2px;
+        padding: 5px 10px;
+        background-color: $secondaryColor;
+        color: white;
+      }
+      :hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
